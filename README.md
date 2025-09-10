@@ -1,0 +1,1 @@
+The Fantasy Draft Companion Chrome Extension is your best buddy for identifying value in drafts against the default Yahoo rankings.

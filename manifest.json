@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Fantasy Draft Companion \u2014 Pro",
+  "version": "2.7.0",
+  "description": "Auto-mark picks with fuzzy matching, CSV/JSON import, sorting, tiers, draggable/resizable, hide/show, context window, neighbor view, star sleepers, export CSV, round tracker, on-deck banner, bind to Updates panel.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://football.fantasysports.yahoo.com/*",
+    "*://sports.yahoo.com/*",
+    "*://draft.yahoo.net/*",
+    "*://*.fantasysports.yahoo.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://football.fantasysports.yahoo.com/*",
+        "*://sports.yahoo.com/*",
+        "*://draft.yahoo.net/*",
+        "*://*.fantasysports.yahoo.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
